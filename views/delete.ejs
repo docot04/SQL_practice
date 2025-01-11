@@ -1,0 +1,11 @@
+<%- include("includes/head.ejs", {title: "Edit User"}) %>
+
+<body>
+    <h2>Delete Userdata for <%=user.username%></h2>
+    <h3>Enter Password to proceed</h3>
+    <form method="post" action="/user/<%=user.id%>?_method=DELETE">
+        <input type="password" name="password" placeholder="Enter Password">
+        <button>Delete</button>
+    </form>
+</body>
+</html>

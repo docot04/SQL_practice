@@ -1,0 +1,15 @@
+<%- include("includes/head.ejs", {title: "Create New User"}) %>
+
+<body>
+    <h2>Enter your data:</h2>
+    <form action="/user" method="post">
+        Username: <input type="text" name="username" placeholder="Your Username">
+        <br>
+        Email: <input type="email" name="email" placeholder="yourmail@mail.com" >
+        <br>
+        Password: <input type="password" name="password">
+        <br>
+        <button>Create New User</button>
+    </form>
+</body>
+</html>

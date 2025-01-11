@@ -1,0 +1,11 @@
+<%- include("includes/head.ejs", {title: "Edit User"}) %>
+
+<body>
+    <h2>Edit Userdata for <%=user.username%></h2>
+    <form method="post" action="/user/<%=user.id%>?_method=PATCH">
+        <textarea name="username"><%=user.username%></textarea>
+        <input type="password" name="password" placeholder="Enter Password">
+        <button>Edit</button>
+    </form>
+</body>
+</html>
